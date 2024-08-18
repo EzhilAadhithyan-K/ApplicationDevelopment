@@ -1,0 +1,198 @@
+/* Basic styling */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Light blue background for the whole page */
+}
+
+/* Navigation bar styling */
+/* Navigation bar styling */
+nav {
+    background-color: #02356b; /* Dark blue for the navigation bar */
+    padding: 15px 0; /* Consistent padding for height */
+    height: 60px; /* Explicitly set height */
+    position: fixed; /* Fix the navigation bar at the top */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure the nav bar is above other content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
+    box-sizing: border-box; /* Include padding in the height calculation */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+    height: 100%; /* Full height of the nav */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center; /* Center align text vertically */
+    height: 100%; /* Full height of the nav */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Container for the main content */
+.container {
+    max-width: 1000px;
+    margin: 80px auto 20px; /* Adjust margin-top to accommodate fixed nav */
+    padding: 20px;
+    background-color: #fff; /* White background for the content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Rounded corners for container */
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Heading styling */
+h2, h3 {
+    text-align: center;
+    color: #02356b; /* Dark blue color for headings */
+}
+
+/* Section styling */
+section {
+    margin: 20px 0;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+section h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+section.about, section.details, section.academic-performance, section.projects, section.ts {
+    background-color: #e0f7fa; /* Lighter blue for content boxes */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* About section specific styles */
+section.about {
+    text-align: center; /* Center align text and image */
+}
+
+section.about img {
+    max-width: 200px; /* Limit image width */
+    border-radius: 50%;
+    margin: 0 auto 20px; /* Center the image and add margin at the bottom */
+}
+
+section.about p {
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Details and Projects list styling */
+section.details ul, section.projects ul {
+    list-style-type: disc; /* Dot icons for the list */
+    padding-left: 20px; /* Space from the left */
+    text-align: left; /* Align text to the left */
+}
+
+section.details li, section.projects li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* Academic performance and Technical Skills table styling */
+section.academic-performance table, section.ts table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+section.academic-performance th, section.academic-performance td, 
+section.ts th, section.ts td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+section.academic-performance th, section.ts th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #02356b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #021d38;
+}
+
+/* Social media links styling */
+.details .social-media a {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #02356b;
+}
+
+.details .social-media i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.details .social-media a:hover {
+    text-decoration: underline;
+}
